@@ -1,0 +1,28 @@
+.rootcard{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.CartImages{
+    display: flex;
+    height: 400px;
+    flex-direction: row;
+    margin: 20px;
+   
+}
+.Heading{
+    margin:10px;
+
+    text-align: center;
+    font-size: 45px;
+    font-family : Verdana,Arial;
+}
+.productcard{
+    width:400px;
+    margin: 10px;
+}
+.authcard{
+    
+    margin: 50px 20px !important;
+    padding: 10px;
+}
