@@ -89,7 +89,7 @@ export async function getServerSideProps(context) {
    const id= context.params.id;
    const data=await fetch(`${baseURL}/api/product/${id}`).then(res=>res.json());
 
-   console.log(data);
+  // console.log(data);
    return{
        props:{
            value:data
