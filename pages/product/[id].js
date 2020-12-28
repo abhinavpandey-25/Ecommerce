@@ -63,7 +63,7 @@ const product=(props)=>{
     return(
     <div className="container center-align " style={{marginBottom:"20px"}}>
         <h2>{props.value.name}</h2>
-     <img src={props.value.mediaURL} style={{"width":"35%", "height":"400px"}}/>
+     <img src={props.value.mediaURL} style={{"width":"35%", "height":"400px",borderStyle:"solid",borderWidth:"6px"}}/>
    <b><p>RS {props.value.price}</p></b>
     <input type="number" style={{width:"50%",textAlign:"center"}} min="1" placeholder="Quantity" value={quantity} 
     onChange={(e)=>setQuantity(Number(e.target.value))} />

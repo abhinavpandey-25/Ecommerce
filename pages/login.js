@@ -29,6 +29,8 @@ const login=()=>{
       //then token is accesible from client side only  and in the form of cookie and if cookie then can be accessed from
       //both client and server 
         console.log(res2);
+        console.log("token")
+        console.log(res2.token);
       cookie.set('token',res2.token);
       cookie.set('user',res2.user);
       router.push('/account');

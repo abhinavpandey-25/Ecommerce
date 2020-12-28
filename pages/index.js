@@ -10,14 +10,19 @@ import Navbar from '../components/NavBar'
 //toh thoda slow hoga ye.
 const Home=(props)=>{
   const productlist=props.products.map(value=>{
+
+  
+            
     return (    
   <div className=" card center-align productcard " style={{margin:"15px",borderStyle:'solid'}} key={Math.random()}>
     <div className="card small " >
       <div className="card-image"  >
         <img src={value.mediaURL}/>
-        <span className="card-title">{value.name}</span>
+       
       </div>
       <div className="card-content">
+        <h3>{value.name}</h3>
+        sg
         <p>{value.description}</p>
       </div>
       <div className="card-action">
