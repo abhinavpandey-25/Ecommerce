@@ -21,10 +21,9 @@ export default async(req,res)=>{
       const token= jwt.sign({userid:user._id},process.env.JWT_SECRET,{
           expiresIn:"2 days"  
         });
-        console.log("token")
+        console.log
         console.log(token)
       return  res.status(201).json({token:token,user:{
-        
           email:email,
           password:password,
           role:user.role

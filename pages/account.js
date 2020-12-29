@@ -4,11 +4,11 @@ import baseUrl from '../helper/baseURL'
 import {useEffect,useRef} from 'react'
 import UserRoles from '../components/userRoles'
 const Account=(props)=>{
-    
+    console.log(props)
     const cookie =parseCookies();
     const orderCard=useRef(null);
     const user=cookie.user?JSON.parse(cookie.user):""
-    console.log("account")
+ 
     console.log(user);
     if(props.orders.length===0){
         return (<div className=" container center-align"> 
@@ -18,6 +18,7 @@ const Account=(props)=>{
          M.Collapsible.init(orderCard.current);
     },[])
     const OrderHistory =()=>{
+        
            return(
            <ul className="collapsible" ref={orderCard} >
         {props.orders.map(item=>{
@@ -72,8 +73,9 @@ const Account=(props)=>{
         }
     })
     const res2=await res.json()
+    console.log("here")
     console.log(res2);
-    console.log("done")
+    console.log("doneasa")
   
         return{
             props:{orders:res2}
