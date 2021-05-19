@@ -1,0 +1,1 @@
+{"ast":null,"code":"//depending on the environment ki whether hamara project deployed h(production env) m h ya nhi we will decide the url\nvar baseURL = process.env === 'production' ? \"https://mystoreAbhi25.vercel.app\" : \"http://localhost:3000\";\nexport default baseURL;","map":null,"metadata":{},"sourceType":"module"}
